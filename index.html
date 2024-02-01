@@ -17,6 +17,73 @@
 <script src="https://kit.fontawesome.com/ed0d1cc5a7.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+    <style>#contact {
+    background-color: #F6F6F6;
+    padding: 80px 0;
+    color: white;
+}
+
+form {
+    background-color: black;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+
+/* Submit Button Styling */
+.btn-submit {
+    background-color: #7A72FF;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: #6257E0;
+}
+
+.contact-form button:hover {
+    background-color: #665eff; /* Change to your desired button hover color */
+    color: white;
+}
+/* Add this CSS to your existing stylesheet */
+
+/* Footer Styling */
+footer {
+    background-color: #333232;
+    padding: 30px 0;
+    color: white;
+}
+
+.footer-heading {
+    color: #7A72FF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    font-size: 30px;
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons:hover {
+    color: #7A72FF;
+}
+
+.footer-hr {
+    border-color: #7A72FF;
+}
+
+.footer-text {
+    font-size: 18px;
+}</style>
   </head>
   <body>
 
@@ -30,21 +97,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Services.html">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Skills.html">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li class="nav-item">
+           <!-- <li class="nav-item">
               <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="Contact.html">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
 <li class="nav-item">
-              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             </li>
           </ul>
@@ -62,7 +129,7 @@
 <a href="#about" class="btn btn-outline-light">Learn More</a>
 </div>
 <div class="col-md-6">
-<img src="" alt="I.S. Shifat" class="img-fluid">
+<img src="your-profile-image.jpg" alt="I.S. Shifat" class="img-fluid">
 </div>
 </div>
 </div>
@@ -77,22 +144,22 @@
       <div class="col-md-6">
         <h2>My Skills</h2>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 90%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">HTML</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">CSS</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 55%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">JavaScript</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 30%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 70%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">Home Automations</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 50%;" aria-valuenow="39" aria-valuemin="0" aria-valuemax="100">Home Automations</div>
         </div>
         <div class="progress">
-          <div class="progress-bar bg-info" role="progressbar" style="width: 65%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">C Programming</div>
+          <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">C Programming</div>
         </div>
       </div>
     </div>
@@ -352,11 +419,11 @@
             <div class="col-md-6 offset-md-3">
                 <h3 class="footer-heading">Connect with me</h3>
                 <!-- Add your social media links here -->
-                <a href="https://www.facebook.com/shifat.cse" class="social-icons" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/i_s_shifat/" class="social-icons" title="instagram"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.threads.net/@i_s_shifat" class="social-icons" title="Threads"><i class="fab fa-threads"></i></a>
-                <a href="https://github.com/SHIFATITFIRM/" class="social-icons" title="GitHub"><i class="fab fa-github"></i></a>
-               <a href="https://shifatitfirm.github.io/i.s.shifat1" class="social-icons" title="website"><i class="fab fa-website"></i></a>
+                <a href="https://www.facebook.com/shifat.cse" target="_blank"class="social-icons" title="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/i_s_shifat/?igsh=cTQ5Nmg0eHIocm9o" target="_blank"class="social-icons" title="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.threads.net/@i_s_shifat"target="_blank" class="social-icons" title="Threads"><i class="fab fa-threads"></i></a>
+                <a href="https://github.com/SHIFATITFIRM/"target="_blank" class="social-icons" title="GitHub"><i class="fab fa-github"></i></a>
+               <a href="https://shifatitfirm.github.io/i.s.shifat1" class="social-icons" target="_blank"title="website"><i class="fa fa-globe"></i></a>
             </div>
         </div>
         <hr class="footer-hr">
