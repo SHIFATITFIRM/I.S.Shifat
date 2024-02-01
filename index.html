@@ -55,6 +55,42 @@
         .nav-link:hover {
             color: #f8f9fa !important;
         }
+        /* Add your custom styles here */
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar.shrink {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#333; /* Change the background color when the navbar is small */
+}
+.navbar {
+    background-color: #343a40; /* Dark gray background */
+}
+
+.navbar.shrink {
+    background-color: #555; /* Slightly lighter gray when navbar is small */
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff; /* White text */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* White color for the hamburger icon */
+}
+
+/* Hover and active states */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #17a2b8; /* Light blue on hover/focus */
+}
+
+/* Other styles for your content */
+
 
         /* Animation for Navigation Bar */
         @keyframes fadeInDown {
@@ -313,6 +349,9 @@ form:hover {
     color: white;
 }
 /* Add this CSS to your existing stylesheet */
+.lear_more{
+  color: black;
+}
 
 /* Footer Styling */
 footer {
@@ -349,36 +388,34 @@ footer {
   <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">I.S. Shifat</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">I.S.SHIFAT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                     <li class="nav-item">
+              <a class="nav-link" href="#services">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#about">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">Skills</a>
-            </li>
-           <!-- <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-<li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            </li>
-          </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
+
 
     <!-- Home Section -->
     <section id="home" class="py-5">
@@ -386,8 +423,27 @@ footer {
         <div class="row">
           <div class="col-md-6 align-self-center">
             <h1 class="display-4 mb-4">I.S. Shifat</h1>
-            <p class="lead mb-4">I'm Irfan Shahriar Shifat.<!-- I�m Student of class Ten in Naikhongchari Govt Technical School and College. -->I'm Student of IT Support & IoT Basics department  . Now I'm learning  HTML, CSS, JS, Python,C programming languages and Home Automations ystem with the dream of becoming a Progamer.  Already I have done some projects of python,HTML,CSS JS and Home Automation system. My Dream university is BUET.</p>
-<a href="#about" class="btn btn-outline-light">Learn More</a>
+            <p class="lead mb-4">I'm Irfan Shahriar Shifat.<!-- I?m Student of class Ten in Naikhongchari Govt Technical School and College. -->I'm Student of IT Support & IoT Basics department  . Now I'm learning  HTML, CSS, JS, Python,C programming languages and Home Automations system with the dream of becoming a Progamer.  Already I have done some projects of python,HTML,CSS JS and Home Automation system. My Dream university is BUET.</p>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#learnMoreModal">
+    Learn More
+</button>
+<div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="learnMoreModalLabel">Learn More</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+      
+              <p class="lear_more">Irfan Shahriar Shifat is a dedicated student currently pursuing studies in the IT Support & IoT Basics department. With a keen interest in programming languages such as HTML, CSS, JS, Python, and C, Shifat is diligently working towards mastering these technologies. Alongside academic pursuits, Shifat has successfully completed several projects in Python, HTML, CSS, JS, and has gained practical experience in developing Home Automation systems. With a dream of becoming a professional gamer, Shifat's passion for technology extends beyond traditional coding to encompass the exciting realm of gaming. Striving towards academic excellence, Shifat aspires to join BUET, envisioning it as the ideal institution to further nurture and enhance their skills in the field of technology.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 </div>
 <div class="col-md-6">
 <img src="your-profile-image1.jpg" alt="I.S. Shifat" class="img-fluid">
@@ -400,8 +456,8 @@ footer {
     <div class="row">
       <div class="col-md-6">
         <h2>About Me</h2>
-        <p>I am<!-- a class ten student from Naikhongchari Govt Technical School & College, -->studying in the IT department. I am interested in programming and currently learning HTML, CSS, JS, Python, and C programming languages. My dream is to become a Progamer and I am working hard to achieve it.</p>
-      </div>
+        <p>I am<!-- a class ten student from Naikhongchari Govt Technical School & College, --> studying at IT department. I am interested in programming and currently learning HTML, CSS, JS, Python, and C programming languages. My dream is to become a Progamer and I am working hard to achieve it.</p>
+</div>
       <div class="col-md-6">
         <h2>My Skills</h2>
         <div class="progress">
@@ -700,9 +756,27 @@ footer {
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-FnYGPzL5rNfFrsAXPAbn+PfBgr/2QG1hEG/PI1h2kMzjKtRcBnszH19JteOFOKfA" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-yxkQLPbks7XuWzZ2V7Zu62CYnIv6ibF/6yjCV4Pp/Kz12wtzzmZ9Y3UZm7jK3imw" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/ed0d1cc5a7.js" crossorigin="anonymous"></script>
+ <!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  
+    $(document).ready(function() {
+        $(window).on("scroll", function() {
+            if ($(this).scrollTop() > 50) {
+                $(".navbar").addClass("shrink");
+            } else {
+                $(".navbar").removeClass("shrink");
+            }
+        });
+    });
+ 
+</script>
+
   </body>
 </html>
